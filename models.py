@@ -67,9 +67,9 @@ class RegressionModel(object):
         # Initialize your model parameters here
         "*** YOUR CODE HERE ***"
         # Hidden layer size 512
-        self.w1 = nn.Parameter(1,20)
-        self.w2 = nn.Parameter(20,1)
-        self.b1 = nn.Parameter(1,20)
+        self.w1 = nn.Parameter(1,512)
+        self.w2 = nn.Parameter(512,1)
+        self.b1 = nn.Parameter(1,512)
         self.b2 = nn.Parameter(1,1)
 
     def run(self, x):
